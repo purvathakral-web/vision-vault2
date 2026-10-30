@@ -1,0 +1,93 @@
+.profile-page {
+  padding: 44px 24px 60px;
+}
+
+.profile-card {
+  max-width: 640px;
+}
+
+.profile-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.profile-top h2 {
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+.profile-bio {
+  margin-bottom: 22px;
+}
+
+.profile-section {
+  margin-bottom: 20px;
+}
+
+.profile-section h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-soft);
+  margin-bottom: 10px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hackathon-history {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text-soft);
+}
+
+.hackathon-history li {
+  margin-bottom: 4px;
+}
+
+.profile-links {
+  display: flex;
+  gap: 16px;
+}
+
+.profile-links a {
+  color: var(--violet);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.profile-form {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile-form label {
+  font-size: 0.82rem;
+  color: var(--text-soft);
+  margin-top: 8px;
+}
+
+.profile-form input,
+.profile-form textarea {
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  resize: vertical;
+}
+
+.profile-form .form-actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+}
