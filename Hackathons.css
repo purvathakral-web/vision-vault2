@@ -1,0 +1,130 @@
+.hackathons-page {
+  padding: 44px 24px 60px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.filter-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--text-soft);
+  padding: 7px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.chip-active {
+  background: var(--violet);
+  border-color: var(--violet);
+  color: white;
+}
+
+.theme-select {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.hackathon-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hackathon-top {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.hackathon-card h3 {
+  font-size: 1.1rem;
+}
+
+.hackathon-meta {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+}
+
+.hackathon-card .btn {
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+.teammates-section {
+  margin-top: 64px;
+}
+
+.teammate-card h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.teammate-card p {
+  font-size: 0.88rem;
+  margin-bottom: 10px;
+}
+
+.hackathon-details { margin-top: 18px; display: flex; flex-direction: column; gap: 8px; max-width: 560px; }
+.hackathon-card h3 a { color: inherit; text-decoration: none; }
+.hackathon-card h3 a:hover { color: var(--violet); }
+
+.data-note { font-size: 0.8rem; color: var(--text-soft); margin-bottom: 14px; }
+.contact-buttons { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+
+/* Simple modal used for hackathon and teammate details. */
+.hackathon-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.teammate-card { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.simple-modal-overlay {
+  position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center;
+  justify-content: center; padding: 20px; background: rgba(15, 14, 25, 0.65);
+}
+.simple-modal { position: relative; width: 100%; max-width: 520px; max-height: 85vh; overflow-y: auto; }
+.simple-modal h2 { margin: 0 30px 16px 0; }
+.simple-modal p { margin: 10px 0; }
+.modal-close {
+  position: absolute; top: 10px; right: 12px; border: 0; background: transparent;
+  color: var(--text); font-size: 1.8rem; cursor: pointer;
+}
+
+/* Light polish for teammate cards and contact actions. */
+.teammate-card {
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.teammate-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+  border-color: color-mix(in srgb, var(--violet) 40%, var(--border));
+}
+.teammate-card h3 { font-size: 1.08rem; }
+.teammate-card .contact-buttons { margin-top: auto; }
+.teammate-card .contact-buttons .btn { margin-top: 0; }
+
+/* Hackathon card layout polish */
+.hackathon-card { border: 1px solid var(--border); box-shadow: var(--shadow); transition: transform .18s ease, box-shadow .18s ease; }
+.hackathon-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+.hackathon-card > p { line-height: 1.5; }
+.hackathon-top { flex-wrap: wrap; align-items: center; }
+.hackathon-meta { color: var(--text-soft); }
+.hackathon-actions .btn { margin-top: auto; }

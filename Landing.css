@@ -1,0 +1,153 @@
+.hero {
+  padding: 90px 0 70px;
+}
+
+.hero-inner {
+  max-width: 720px;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  margin: 18px 0 20px;
+}
+
+.hero h1 span {
+  color: var(--violet);
+  position: relative;
+  white-space: nowrap;
+}
+
+.hero h1 span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2px;
+  height: 10px;
+  background: var(--marigold);
+  opacity: 0.55;
+  z-index: -1;
+  transform: rotate(-1deg);
+}
+
+.hero-sub {
+  font-size: 1.08rem;
+  max-width: 560px;
+  margin-bottom: 30px;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.section-soft {
+  background: var(--bg-soft);
+}
+
+.step-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px 22px;
+  position: relative;
+}
+
+.step-number {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--mint);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.step-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.feature-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px;
+  position: relative;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  display: block;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.feature-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.feature-arrow {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  color: var(--violet);
+  font-size: 1.1rem;
+}
+
+.team-teaser {
+  background: var(--violet);
+  color: white;
+  border-radius: var(--radius);
+  padding: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.team-teaser h2 {
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.team-teaser p {
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 480px;
+}
+
+.team-teaser .btn-primary {
+  background: white;
+  color: var(--violet);
+  box-shadow: none;
+}
+
+.cta-section {
+  text-align: center;
+}
+
+.cta-inner h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.cta-inner p {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 60px 0 50px;
+  }
+}
+.feature-card { border: 0; text-align: left; cursor: pointer; font: inherit; color: inherit; }
+
+.feature-card { display: block; text-decoration: none; color: inherit; text-align: left; }
+
+
+.landing-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.landing-brand img { width: 54px; height: 54px; object-fit: contain; filter: drop-shadow(0 5px 12px rgba(22, 143, 156, .16)); }
+@media (max-width: 520px) { .landing-brand { align-items: flex-start; } .landing-brand img { width: 44px; height: 44px; } }
